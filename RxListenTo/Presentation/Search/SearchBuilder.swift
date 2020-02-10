@@ -17,10 +17,23 @@ final class SearchBuilderImpl: SearchBuilder {
 
     func build() -> UIViewController {
         let view = SearchViewController()
-//        let component = SearchComponent()
         let scene = NavigationScene(parent: dependency.searchNavigationController)
         let router = SearchRouterImpl(scene: scene)
-        view.router = router
+
+        let searchRepository = SearchRepositoryImpl()
+        let trackRepository = TrackRepositoryImpl()
+        let artistRepository = ArtistRepositoryImpl()
+        let albumRepository = AlbumRepositoryImpl()
+        let interactor = SearchInteractorImpl(
+            searchRepository: searchRepository,
+            trackRepository: trackRepository,
+            artistRepository: artistRepository,
+            albumRepository: albumRepository
+        )
+
+        let viewModel = SearchViewModel(interactor: interactor, router: router)
+        view.viewModel = viewModel
+
         return view
     }
 }

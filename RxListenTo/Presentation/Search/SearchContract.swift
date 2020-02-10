@@ -17,5 +17,3 @@ protocol SearchBuilder: AnyObject {
 }
 
 protocol SearchRouter: AnyObject { }
-
-protocol SearchViewModel { }
