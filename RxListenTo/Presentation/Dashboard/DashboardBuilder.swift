@@ -26,6 +26,8 @@ final class DashboardBuilderImpl: DashboardBuilder {
         settingsNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
 
         let view = DashboardViewController()
+        view.modalPresentationStyle = .fullScreen
+        view.modalTransitionStyle = .crossDissolve
         view.viewControllers = [
             searchNavigationController,
             playerNavigationController,
@@ -39,7 +41,7 @@ final class DashboardBuilderImpl: DashboardBuilder {
         )
 
         let scene = PresentScene(parent: view)
-        let router = DashboardRouter(scene: scene)
+        let router = DashboardRouterImpl(scene: scene)
         view.router = router
         return view
     }

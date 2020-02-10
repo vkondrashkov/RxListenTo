@@ -8,13 +8,16 @@
 
 final class RootRouterImpl: RootRouter {
     private let scene: PresentScene
-    // Builder
+    private let dashboardBuilder: DashboardBuilder
 
-    init(scene: PresentScene) {
+    init(scene: PresentScene,
+         dashboardBuilder: DashboardBuilder) {
         self.scene = scene
+        self.dashboardBuilder = dashboardBuilder
     }
 
     func showDashboard() {
-        // build & play
+        let view = dashboardBuilder.build()
+        scene.play(view: view)
     }
 }

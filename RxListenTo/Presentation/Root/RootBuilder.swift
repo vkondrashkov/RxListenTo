@@ -18,9 +18,12 @@ final class RootBuilderImpl: RootBuilder {
     func build() -> UIViewController {
         let view = RootViewController()
         let component = RootComponent(rootViewController: view)
-        // builder
+        let dashboardBuilder = DashboardBuilderImpl(dependency: component)
         let scene = PresentScene(parent: view)
-        let router = RootRouterImpl(scene: scene)
+        let router = RootRouterImpl(
+            scene: scene,
+            dashboardBuilder: dashboardBuilder
+        )
         view.router = router
         return view
     }
