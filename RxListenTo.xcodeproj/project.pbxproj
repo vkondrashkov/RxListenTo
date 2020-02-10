@@ -33,6 +33,9 @@
 		9C92210E23F14AC50071A6F9 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92210D23F14AC50071A6F9 /* SearchRouter.swift */; };
 		9C92211023F14ACC0071A6F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92210F23F14ACC0071A6F9 /* SearchViewController.swift */; };
 		9C92211223F14AE20071A6F9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211123F14AE20071A6F9 /* SearchViewModel.swift */; };
+		9C92211B23F189CD0071A6F9 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211A23F189CD0071A6F9 /* Track.swift */; };
+		9C92211D23F18A0F0071A6F9 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211C23F18A0F0071A6F9 /* Artist.swift */; };
+		9C92211F23F18A2B0071A6F9 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211E23F18A2B0071A6F9 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		9C92210D23F14AC50071A6F9 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
 		9C92210F23F14ACC0071A6F9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9C92211123F14AE20071A6F9 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		9C92211A23F189CD0071A6F9 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		9C92211C23F18A0F0071A6F9 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		9C92211E23F18A2B0071A6F9 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		DA10A8953448848B6E40F232 /* Pods-RxListenTo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxListenTo.debug.xcconfig"; path = "Target Support Files/Pods-RxListenTo/Pods-RxListenTo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +185,10 @@
 		9C9220E123F13E430071A6F9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				9C92211423F188F40071A6F9 /* Entities */,
+				9C92211523F188FB0071A6F9 /* Interactors */,
+				9C92211623F1890A0071A6F9 /* Repositories */,
+				9C92211923F189250071A6F9 /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -239,6 +249,37 @@
 				9C92211123F14AE20071A6F9 /* SearchViewModel.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		9C92211423F188F40071A6F9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9C92211A23F189CD0071A6F9 /* Track.swift */,
+				9C92211C23F18A0F0071A6F9 /* Artist.swift */,
+				9C92211E23F18A2B0071A6F9 /* Album.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9C92211523F188FB0071A6F9 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9C92211623F1890A0071A6F9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9C92211923F189250071A6F9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +413,11 @@
 				9C9220C223F13CBB0071A6F9 /* ViewController.swift in Sources */,
 				9C9220FD23F145260071A6F9 /* DashboardComponent.swift in Sources */,
 				9C9220BE23F13CBB0071A6F9 /* AppDelegate.swift in Sources */,
+				9C92211B23F189CD0071A6F9 /* Track.swift in Sources */,
+				9C92211D23F18A0F0071A6F9 /* Artist.swift in Sources */,
 				9C9220E423F13F900071A6F9 /* AppComponent.swift in Sources */,
 				9C9220F223F140DC0071A6F9 /* WindowScene.swift in Sources */,
+				9C92211F23F18A2B0071A6F9 /* Album.swift in Sources */,
 				9C92210823F14AA80071A6F9 /* SearchContract.swift in Sources */,
 				9C92210A23F14AB80071A6F9 /* SearchComponent.swift in Sources */,
 				9C9220E923F13FF50071A6F9 /* RootComponent.swift in Sources */,
