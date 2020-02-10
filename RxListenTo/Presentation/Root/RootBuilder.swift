@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RootBuilderImpl: RootBuilder {
+final class RootBuilderImpl: RootBuilder {
     private let dependency: RootDependency
 
     init(dependency: RootDependency) {
@@ -17,7 +17,7 @@ class RootBuilderImpl: RootBuilder {
 
     func build() -> UIViewController {
         let view = RootViewController()
-        let component = RootComponent()
+        let component = RootComponent(rootViewController: view)
         // builder
         let scene = PresentScene(parent: view)
         let router = RootRouterImpl(scene: scene)

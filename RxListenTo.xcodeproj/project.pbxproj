@@ -22,6 +22,11 @@
 		9C9220F223F140DC0071A6F9 /* WindowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220F123F140DC0071A6F9 /* WindowScene.swift */; };
 		9C9220F423F141440071A6F9 /* NavigationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220F323F141440071A6F9 /* NavigationScene.swift */; };
 		9C9220F623F1414C0071A6F9 /* PresentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220F523F1414C0071A6F9 /* PresentScene.swift */; };
+		9C9220FB23F1451E0071A6F9 /* DashboardContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220FA23F1451E0071A6F9 /* DashboardContract.swift */; };
+		9C9220FD23F145260071A6F9 /* DashboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220FC23F145260071A6F9 /* DashboardComponent.swift */; };
+		9C9220FF23F1452D0071A6F9 /* DashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220FE23F1452D0071A6F9 /* DashboardBuilder.swift */; };
+		9C92210123F145330071A6F9 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92210023F145330071A6F9 /* DashboardRouter.swift */; };
+		9C92210323F1453B0071A6F9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92210223F1453B0071A6F9 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		9C9220F123F140DC0071A6F9 /* WindowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowScene.swift; sourceTree = "<group>"; };
 		9C9220F323F141440071A6F9 /* NavigationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScene.swift; sourceTree = "<group>"; };
 		9C9220F523F1414C0071A6F9 /* PresentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentScene.swift; sourceTree = "<group>"; };
+		9C9220FA23F1451E0071A6F9 /* DashboardContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContract.swift; sourceTree = "<group>"; };
+		9C9220FC23F145260071A6F9 /* DashboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardComponent.swift; sourceTree = "<group>"; };
+		9C9220FE23F1452D0071A6F9 /* DashboardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBuilder.swift; sourceTree = "<group>"; };
+		9C92210023F145330071A6F9 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		9C92210223F1453B0071A6F9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DA10A8953448848B6E40F232 /* Pods-RxListenTo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxListenTo.debug.xcconfig"; path = "Target Support Files/Pods-RxListenTo/Pods-RxListenTo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +176,7 @@
 			children = (
 				9C9220F023F140D10071A6F9 /* Shared */,
 				9C9220E523F13FDA0071A6F9 /* Root */,
+				9C9220F723F144A00071A6F9 /* Dashboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -190,6 +201,18 @@
 				9C9220F523F1414C0071A6F9 /* PresentScene.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		9C9220F723F144A00071A6F9 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				9C9220FA23F1451E0071A6F9 /* DashboardContract.swift */,
+				9C9220FC23F145260071A6F9 /* DashboardComponent.swift */,
+				9C9220FE23F1452D0071A6F9 /* DashboardBuilder.swift */,
+				9C92210023F145330071A6F9 /* DashboardRouter.swift */,
+				9C92210223F1453B0071A6F9 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,15 +343,20 @@
 			files = (
 				9C9220F423F141440071A6F9 /* NavigationScene.swift in Sources */,
 				9C9220C223F13CBB0071A6F9 /* ViewController.swift in Sources */,
+				9C9220FD23F145260071A6F9 /* DashboardComponent.swift in Sources */,
 				9C9220BE23F13CBB0071A6F9 /* AppDelegate.swift in Sources */,
 				9C9220E423F13F900071A6F9 /* AppComponent.swift in Sources */,
 				9C9220F223F140DC0071A6F9 /* WindowScene.swift in Sources */,
 				9C9220E923F13FF50071A6F9 /* RootComponent.swift in Sources */,
+				9C92210123F145330071A6F9 /* DashboardRouter.swift in Sources */,
 				9C9220ED23F140170071A6F9 /* RootRouter.swift in Sources */,
 				9C9220E723F13FED0071A6F9 /* RootContract.swift in Sources */,
+				9C9220FB23F1451E0071A6F9 /* DashboardContract.swift in Sources */,
 				9C9220F623F1414C0071A6F9 /* PresentScene.swift in Sources */,
 				9C9220EF23F140250071A6F9 /* RootViewController.swift in Sources */,
+				9C9220FF23F1452D0071A6F9 /* DashboardBuilder.swift in Sources */,
 				9C9220EB23F13FFE0071A6F9 /* RootBuilder.swift in Sources */,
+				9C92210323F1453B0071A6F9 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

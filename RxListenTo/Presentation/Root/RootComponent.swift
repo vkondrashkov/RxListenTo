@@ -6,5 +6,12 @@
 //  Copyright © 2020 vkondrashkov. All rights reserved.
 //
 
-/// TODO: Add dependency
-final class RootComponent { }
+import UIKit
+
+final class RootComponent: DashboardDependency {
+    let rootViewController: UIViewController
+
+    init(rootViewController: UIViewController) {
+        self.rootViewController = rootViewController
+    }
+}
