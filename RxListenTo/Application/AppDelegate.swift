@@ -13,9 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
-        window?.makeKeyAndVisible()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+
+        let component = AppComponent(window: window)
+        let scene = WindowScene(window: window)
+        let rootView = RootBuilderImpl(dependency: component).build()
+        scene.play(view: rootView)
+
         return true
     }
 }

@@ -13,6 +13,15 @@
 		9C9220C723F13CBD0071A6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9220C623F13CBD0071A6F9 /* Assets.xcassets */; };
 		9C9220CA23F13CBD0071A6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9220C823F13CBD0071A6F9 /* LaunchScreen.storyboard */; };
 		9C9220D523F13CBD0071A6F9 /* RxListenToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220D423F13CBD0071A6F9 /* RxListenToTests.swift */; };
+		9C9220E423F13F900071A6F9 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220E323F13F900071A6F9 /* AppComponent.swift */; };
+		9C9220E723F13FED0071A6F9 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220E623F13FED0071A6F9 /* RootContract.swift */; };
+		9C9220E923F13FF50071A6F9 /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220E823F13FF50071A6F9 /* RootComponent.swift */; };
+		9C9220EB23F13FFE0071A6F9 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220EA23F13FFE0071A6F9 /* RootBuilder.swift */; };
+		9C9220ED23F140170071A6F9 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220EC23F140170071A6F9 /* RootRouter.swift */; };
+		9C9220EF23F140250071A6F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220EE23F140250071A6F9 /* RootViewController.swift */; };
+		9C9220F223F140DC0071A6F9 /* WindowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220F123F140DC0071A6F9 /* WindowScene.swift */; };
+		9C9220F423F141440071A6F9 /* NavigationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220F323F141440071A6F9 /* NavigationScene.swift */; };
+		9C9220F623F1414C0071A6F9 /* PresentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9220F523F1414C0071A6F9 /* PresentScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,15 @@
 		9C9220D023F13CBD0071A6F9 /* RxListenToTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxListenToTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9220D423F13CBD0071A6F9 /* RxListenToTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListenToTests.swift; sourceTree = "<group>"; };
 		9C9220D623F13CBD0071A6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9220E323F13F900071A6F9 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		9C9220E623F13FED0071A6F9 /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		9C9220E823F13FF50071A6F9 /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
+		9C9220EA23F13FFE0071A6F9 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		9C9220EC23F140170071A6F9 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		9C9220EE23F140250071A6F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9C9220F123F140DC0071A6F9 /* WindowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowScene.swift; sourceTree = "<group>"; };
+		9C9220F323F141440071A6F9 /* NavigationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScene.swift; sourceTree = "<group>"; };
+		9C9220F523F1414C0071A6F9 /* PresentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentScene.swift; sourceTree = "<group>"; };
 		DA10A8953448848B6E40F232 /* Pods-RxListenTo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxListenTo.debug.xcconfig"; path = "Target Support Files/Pods-RxListenTo/Pods-RxListenTo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				9C9220BD23F13CBB0071A6F9 /* AppDelegate.swift */,
+				9C9220E323F13F900071A6F9 /* AppComponent.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -145,8 +164,32 @@
 		9C9220E223F13E750071A6F9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9C9220F023F140D10071A6F9 /* Shared */,
+				9C9220E523F13FDA0071A6F9 /* Root */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9C9220E523F13FDA0071A6F9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9C9220E623F13FED0071A6F9 /* RootContract.swift */,
+				9C9220E823F13FF50071A6F9 /* RootComponent.swift */,
+				9C9220EA23F13FFE0071A6F9 /* RootBuilder.swift */,
+				9C9220EC23F140170071A6F9 /* RootRouter.swift */,
+				9C9220EE23F140250071A6F9 /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9C9220F023F140D10071A6F9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9C9220F123F140DC0071A6F9 /* WindowScene.swift */,
+				9C9220F323F141440071A6F9 /* NavigationScene.swift */,
+				9C9220F523F1414C0071A6F9 /* PresentScene.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9220F423F141440071A6F9 /* NavigationScene.swift in Sources */,
 				9C9220C223F13CBB0071A6F9 /* ViewController.swift in Sources */,
 				9C9220BE23F13CBB0071A6F9 /* AppDelegate.swift in Sources */,
+				9C9220E423F13F900071A6F9 /* AppComponent.swift in Sources */,
+				9C9220F223F140DC0071A6F9 /* WindowScene.swift in Sources */,
+				9C9220E923F13FF50071A6F9 /* RootComponent.swift in Sources */,
+				9C9220ED23F140170071A6F9 /* RootRouter.swift in Sources */,
+				9C9220E723F13FED0071A6F9 /* RootContract.swift in Sources */,
+				9C9220F623F1414C0071A6F9 /* PresentScene.swift in Sources */,
+				9C9220EF23F140250071A6F9 /* RootViewController.swift in Sources */,
+				9C9220EB23F13FFE0071A6F9 /* RootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
