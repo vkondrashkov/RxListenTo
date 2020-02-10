@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class DashboardComponent {
+final class DashboardComponent: SearchDependency {
     let searchNavigationController: UINavigationController
     let playerNavigationController: UINavigationController
     let settingsNavigationController: UINavigationController

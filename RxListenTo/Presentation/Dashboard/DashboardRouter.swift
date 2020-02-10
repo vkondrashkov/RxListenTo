@@ -7,15 +7,19 @@
 //
 
 final class DashboardRouterImpl: DashboardRouter{
-    private let scene: PresentScene
+    private let searchScene: NavigationScene
+    private let searchBuilder: SearchBuilder
     // Builder
 
-    init(scene: PresentScene) {
-        self.scene = scene
+    init(searchScene: NavigationScene,
+         searchBuilder: SearchBuilder) {
+        self.searchScene = searchScene
+        self.searchBuilder = searchBuilder
     }
 
     func showSearch() {
-
+        let view = searchBuilder.build()
+        searchScene.play(view: view)
     }
 
     func showPlayer() {

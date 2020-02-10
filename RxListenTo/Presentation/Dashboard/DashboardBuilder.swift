@@ -40,8 +40,13 @@ final class DashboardBuilderImpl: DashboardBuilder {
             settingsNavigationController: settingsNavigationController
         )
 
-        let scene = PresentScene(parent: view)
-        let router = DashboardRouterImpl(scene: scene)
+        let searchBuilder = SearchBuilderImpl(dependency: component)
+
+        let searchScene = NavigationScene(parent: searchNavigationController)
+        let router = DashboardRouterImpl(
+            searchScene: searchScene,
+            searchBuilder: searchBuilder
+        )
         view.router = router
         return view
     }
