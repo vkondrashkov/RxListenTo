@@ -36,6 +36,10 @@
 		9C92211B23F189CD0071A6F9 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211A23F189CD0071A6F9 /* Track.swift */; };
 		9C92211D23F18A0F0071A6F9 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211C23F18A0F0071A6F9 /* Artist.swift */; };
 		9C92211F23F18A2B0071A6F9 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92211E23F18A2B0071A6F9 /* Album.swift */; };
+		9C92212123F18AA10071A6F9 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92212023F18AA10071A6F9 /* SearchInteractor.swift */; };
+		9C92212323F18B890071A6F9 /* TrackRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92212223F18B890071A6F9 /* TrackRepository.swift */; };
+		9C92212523F18C140071A6F9 /* ArtistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92212423F18C140071A6F9 /* ArtistRepository.swift */; };
+		9C92212723F18C5A0071A6F9 /* AlbumRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C92212623F18C5A0071A6F9 /* AlbumRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		9C92211A23F189CD0071A6F9 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		9C92211C23F18A0F0071A6F9 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		9C92211E23F18A2B0071A6F9 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		9C92212023F18AA10071A6F9 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		9C92212223F18B890071A6F9 /* TrackRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRepository.swift; sourceTree = "<group>"; };
+		9C92212423F18C140071A6F9 /* ArtistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRepository.swift; sourceTree = "<group>"; };
+		9C92212623F18C5A0071A6F9 /* AlbumRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRepository.swift; sourceTree = "<group>"; };
 		DA10A8953448848B6E40F232 /* Pods-RxListenTo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxListenTo.debug.xcconfig"; path = "Target Support Files/Pods-RxListenTo/Pods-RxListenTo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,6 +272,7 @@
 		9C92211523F188FB0071A6F9 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				9C92212023F18AA10071A6F9 /* SearchInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -271,6 +280,9 @@
 		9C92211623F1890A0071A6F9 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				9C92212223F18B890071A6F9 /* TrackRepository.swift */,
+				9C92212423F18C140071A6F9 /* ArtistRepository.swift */,
+				9C92212623F18C5A0071A6F9 /* AlbumRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -410,8 +422,10 @@
 			files = (
 				9C92211223F14AE20071A6F9 /* SearchViewModel.swift in Sources */,
 				9C9220F423F141440071A6F9 /* NavigationScene.swift in Sources */,
+				9C92212723F18C5A0071A6F9 /* AlbumRepository.swift in Sources */,
 				9C9220C223F13CBB0071A6F9 /* ViewController.swift in Sources */,
 				9C9220FD23F145260071A6F9 /* DashboardComponent.swift in Sources */,
+				9C92212523F18C140071A6F9 /* ArtistRepository.swift in Sources */,
 				9C9220BE23F13CBB0071A6F9 /* AppDelegate.swift in Sources */,
 				9C92211B23F189CD0071A6F9 /* Track.swift in Sources */,
 				9C92211D23F18A0F0071A6F9 /* Artist.swift in Sources */,
@@ -424,6 +438,8 @@
 				9C92210123F145330071A6F9 /* DashboardRouter.swift in Sources */,
 				9C9220ED23F140170071A6F9 /* RootRouter.swift in Sources */,
 				9C9220E723F13FED0071A6F9 /* RootContract.swift in Sources */,
+				9C92212123F18AA10071A6F9 /* SearchInteractor.swift in Sources */,
+				9C92212323F18B890071A6F9 /* TrackRepository.swift in Sources */,
 				9C9220FB23F1451E0071A6F9 /* DashboardContract.swift in Sources */,
 				9C9220F623F1414C0071A6F9 /* PresentScene.swift in Sources */,
 				9C9220EF23F140250071A6F9 /* RootViewController.swift in Sources */,
